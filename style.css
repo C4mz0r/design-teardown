@@ -1,13 +1,34 @@
 #nav-sections {
   width:10%;
-  background-color:orange;
+  background-color:#eee;
   float:left;
+  color: #ccc;
+}
+
+#nav-sections li {
+  height: 100px;
+  position: relative;
+  left: 10%;  
+  /* move the li text down */
+  -ms-transform: translateY(40%);
+  -webkit-transform: translateY(40%);
+  transform: translateY(40%);
 }
 
 #nav-tags {
   width:15%;
-  background-color:blue;
+  background-color:#ccc;
   float:left;
+  color: #aaa;
+}
+
+#nav-tags li {
+  margin-bottom: 10px;
+}
+
+#nav-tags ul {
+  margin-bottom: 40px;
+  margin-left: 20px;
 }
 
 #articles {
@@ -43,22 +64,55 @@ footer {
   background-color: #333;
 }
 
-#search {
+/* search (or subscribe) div */
+.submit {
   width: 90%;
   margin: 0 auto;
   background-color: blue;
 }
 
-/* search field */
-#search div:nth-of-type(1) {
+/* search (or subscribe) field */
+.submit div:nth-of-type(1) {
   float:left;
   width: 80%;
-  background-color:  #EEE;
+  background-color: #EEE;
   height: 50px;
 }
 
-/* search button */
-#search div:nth-of-type(2) {
+/* search (or subscribe) button */
+.submit div:nth-of-type(2) {
   background-color: #333;
   height: 50px;
+  width: 20%;
+  float: left;
+}
+
+.advertisement {
+  width: 200px;
+  height: 125px;
+  background-color: #555;
+  float: left;
+  margin: 40px 0 0 20px;
+}
+
+.wide {
+  width: 420px;
+}
+
+.button-more {
+  width: 120px;
+  height: 40px;
+  background-color: #555;
+  margin: 40px 0;  
+}
+
+.horizontal-divider {
+  width: 100%;
+  height: 5px;
+  background-color: #555;
+  amargin: 40px 0;  
+}
+
+strong {
+  font-weight: 700;
 }
